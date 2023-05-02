@@ -11,7 +11,6 @@ function cargarEventListeners() {
     listaZapato.addEventListener('click', agregarZapato)
     // elimina cursos del carrito
     carrito.addEventListener('click', eliminarProducto)
-
     // vaciar carrito
 
     vaciarCarrito.addEventListener('click', () => {
@@ -113,4 +112,21 @@ function limpiarHtml(){
     }
 }
 
+let listElements = document.querySelectorAll('.list__button--click');
+
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', ()=>{
+        
+        listElement.classList.toggle('arrow');
+
+        let height = 0;
+        let menu = listElement.nextElementSibling;
+        if(menu.clientHeight == "0"){
+            height=menu.scrollHeight;
+        }
+
+        menu.style.height = `${height}px`;
+
+    })
+});
 

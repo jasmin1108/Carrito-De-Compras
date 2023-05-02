@@ -4,17 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UrbanShop</title>
+    <title>VirtualShop</title>
+    <link
+    rel="icon"
+    sizes="30x30"
+    href="/assets/shopin.svg"/>
     <link rel="stylesheet" href="/CSS/custom.css">
     <link rel="stylesheet" href="/CSS/skeleton.css">
     <link rel="stylesheet" href="/CSS/normalize.css"> 
 </head>
 <body>
 <header id="header" class="header">
+
     <div class="container" id="arriba-header">
-        <div class="row">
-            <div class="four columns">
-                <img src="/Imagenes/loguito.png" id="logo" class="logoimg">
+        <div id="menu_principal">
+                <ul>
+                    <li class="submenu">
+                        <img src="/assets/menu.svg" class="img_lista">
+                        <div>
+                            <nav class="nav">
+                                <ul id="menu_list">
+                                    <li class="list__item">
+                                        <div class="list__button">
+                                        <img src="/assets/inicio.svg" class="list__img">
+                                        <a href="#" class="nav__link">Inicio</a>
+                                        </div>
+                                    </li>
+            
+                                    <li class="list__item list__item--click">
+                                        <div class="list__button list__button--click">
+                                            <img src="/assets/contacto.svg" class="list__img">
+                                            <a href="#" class="nav__link">Contacto</a>
+                                            <img src="/assets/arrow.svg" class="list__arrow">
+                                        </div> 
+                                        <ul class="list__show">
+                                            <li class="list__inside menu sociales">
+                                                <a class="nav__link nav__link--inside" target="blank" href="https://www.instagram.com/" > <img src="/Imagenes/iconoInst.jpg" width="35" height="35"/></a>
+                                            </li>
+                                            <li class="list__inside">
+                                                <a  class="nav__link nav__link--inside"  href="https://www.facebook.com/" target="blank"> <img src="/Imagenes/facebbook.png" width="35" height="35"/> </a>
+                                            </li>
+                                            <li class="list__inside">
+                                                <a class="nav__link nav__link--inside" href="https://www.telegram.com/" target="blank"> <img src="/Imagenes/telegram.jpg" width="35" height="35"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+            
+                                    <li class="list__item">
+                                        <div class="list__button">
+                                            <img src="/assets/sopor.svg" class="list__img">
+                                            <a href="#" class="nav__link">Soporte</a>
+                                        </div>
+                                    </li> 
+
+                                </ul>
+                            </nav>
+                        </div>
+                     </li>
+                </ul>
+        </div>
+        
+        
+            <div class="four columns" id="logo-principal">
+                <h1 id="logo" class="logoimg">VirtualShop</h1>
             </div>
             <div class="four columns contenido-hero ">
                 <form action="#" id="busqueda" method="post" class="formulario">
@@ -48,8 +100,37 @@
                 </ul>
             </div>
         </div> 
+        <div id="decoracion" class="row">
+            <ul id="lista-icons">
+                <li class="list__item">
+                    <div class="list__button">
+                        <a class="nav__link nav__link--inside" href="#" target="blank"> <img src="/assets/shopin.svg" width="35" height="35"/></a>
+                    </div>
+                </li> 
+                <li class="list__item">
+                    <div class="list__button">
+                        <a class="nav__link nav__link--inside" href="#" target="blank"> <img src="/assets/corazon.svg" width="35" height="35"/></a>
+                    </div>
+                </li> 
+                <li class="list__item">
+                    <div class="list__button">
+                        <a class="nav__link nav__link--inside" href="#" target="blank"> <img src="/assets/icondos.svg" width="35" height="35"/></a>
+                    </div>
+                </li> 
+                <li class="list__item">
+                    <div class="list__button">
+                        <a class="nav__link nav__link--inside" href="#" target="blank"> <img src="/assets/iconstres.svg" width="35" height="35"/></a>
+                    </div>
+                </li> 
+                <li class="list__item">
+                    <div class="list__button">
+                        <a class="nav__link nav__link--inside" href="#" target="blank"> <img src="/assets/iconscuarto.svg" width="35" height="35"/></a>
+                    </div>
+                </li> 
+            </ul>
+        </div>
     </div>
-    </header>
+</header>
 
 
     <div id="hero">
@@ -69,7 +150,7 @@
         </div>
     </div>
 
-    <div class="barra">
+    <div  class="barra">
         <div class="container">
             <div class="row">
                     <div class="four columns ">
@@ -253,18 +334,12 @@
                                 <a class="enlace" href="#">Blog</a>
                             </nav>
                     </div>
-                    <div class="four columns">
-                        <h7>Siguenos en: </h7>
-                        <ul id="secundaria" class="menu sociales">
-                            <li><a class="redes" href="https://www.instagram.com/" target="blank">  <img src="/Imagenes/iconoInst.jpg" width="35" height="35"/></a></li>
-                            <li><a class="redes" href="https://www.facebook.com/" target="blank"> <img src="/Imagenes/facebbook.png" width="35" height="35"/></a> </li>
-                            <li><a class="redes" href="https://www.telegram.com/" target="blank"> <img src="/Imagenes/telegram.jpg" width="35" height="35"/></a> </li>
-                            <!-- <a class="enlace" href="#">Empleo</a>
-                            <a class="enlace" href="#">Blog</a> -->
-                        </ul>
+                        
                 </div>
             </div>
         </div>
+        
+
     </footer>
 
     <script type="module" src="/js/main.js"></script>
